@@ -173,4 +173,22 @@ public class AddProductController {
         theModel.addAttribute("availparts",availParts);
         return "productForm";
     }
+    
+    // Part F: Buy Now functionality
+    @GetMapping("/buyProduct")
+    public String buyProduct(@RequestParam("productID") int theId, Model theModel) {
+        ProductService productService = context.getBean(ProductServiceImpl.class);
+        Product product = productService.findById(theId);
+        
+        // Check if product is in stock
+        if (product.getInv() > 0) {
+            // Decrement product inventory by 1
+            product.setInv(product.getInv() - 1);
+            productService.save(product);
+            return "buyproductsuccess";
+        } else {
+            // Product is out of stock
+            return "buyproducterror";
+        }
+    }
 }
