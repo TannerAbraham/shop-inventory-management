@@ -476,52 +476,33 @@ mvn test
 
 ## Git Repository Information
 
-**Repository URL:** [To be filled in after GitLab setup]
+**Repository URL:** [https://gitlab.com/wgu-gitlab-environment/student-repos/tabra99/d287-java-frameworks.git]
 
-**Commit History:** See separate GIT_COMMIT_HISTORY.md document
+**Commit History:** See separate gitlog.txt document
 
 ### Git Commands Used:
 ```bash
 # Clone repository
-git clone [your-gitlab-url]
+git clone [https://gitlab.com/wgu-gitlab-environment/student-repos/tabra99/d287-java-frameworks.git]
 
 # Stage changes
 git add .
 
-# Commit with message
+# Commit with message format
 git commit -m "Part X: Description of changes"
 
 # Push to remote
 git push origin main
 
 # View history
-git log --oneline
+git log
 ```
-
----
-
-## Troubleshooting
-
-### Issue: Sample inventory not loading
-**Solution:** Check that both parts and products tables are empty. Delete database file to reset.
-
-### Issue: Validation not working
-**Solution:** Verify @ValidInventoryRange annotation is present on Part class (line 18).
-
-### Issue: Buy Now button not working
-**Solution:** Check AddProductController.java for buyProduct method (lines 191-205).
-
-### Issue: Tests failing
-**Solution:** Ensure Part class has public getters/setters for minInv and maxInv (lines 75-89).
-
-### Issue: Application won't start
-**Solution:** Verify Java 17 is configured in IntelliJ. Check pom.xml has correct dependencies.
 
 ---
 
 ## Author
 
-**Student:** Tanner
+**Student:** Tanner Abraham
 **Project:** D287 Java Frameworks
 **Customer:** Mountain Peak Guitar Shop
 **Date:** January 2025
@@ -539,4 +520,3 @@ git log --oneline
 ---
 
 **Status:** ✅ All Requirements Complete (Parts A-K)
-**Ready for Submission:** Yes

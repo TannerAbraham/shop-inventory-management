@@ -1,0 +1,92 @@
+commit 65041ff9f776a10837ee28514a1bce185f975291
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 04:16:37 2026 -0500
+
+    Final - Add README Documentation
+
+commit 1a5176c48b1b45757a9aaf034f2c3575888b9780
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 02:50:41 2026 -0500
+
+    Part J - Remove Unused Validators
+
+commit 2e8845688a1deda28b2b6eaefddcfdcfb854bf2b
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 02:43:51 2026 -0500
+
+    Part I - Add Unit Tests
+
+commit ec33039319f3b1f2fd50da26c0cadea015600f10
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 02:38:37 2026 -0500
+
+    Part H - Add Validation for Min/Max
+
+commit 656e9dbdcbd0617b590e0a12cbaea636869038b2
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 02:10:24 2026 -0500
+
+    Part G - Add Min/Max Inventory Fields
+
+commit 42f1e5a8bc140daf275736669166c419ce01d849
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 01:53:28 2026 -0500
+
+    Part F - Add Buy Now Button
+
+commit 61ef3b59a448d27f0247af674f1a8f7f658394c4
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 00:32:36 2026 -0500
+
+    Part E - Add Sample Inventory
+
+commit 19f4575ed4e34c5621b85106f2688877caf8e216
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 00:10:55 2026 -0500
+
+    Part D - Add About Page
+
+commit fdc1a167c3f775260dda6e36a4d12bc1d34b8b9c
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Fri Jan 9 22:03:50 2026 -0500
+
+    Part C - Customize HTML User Interface
+
+commit c7f219ca590074b9144a281f76455cd6b5ababba
+Author: Emilio Miller <emilio.miller@siriusfederal.com>
+Date:   Wed Jul 17 02:51:09 2024 +0000
+
+    Corrected mispelling
+
+commit 41e0796049c783b47b185beaa741ae42f96d7261
+Merge: 3fdf7d2 1853582
+Author: Matt Alexander <matt@twocom.com>
+Date:   Thu Jan 11 18:55:08 2024 +0000
+
+    Updated AddProductController
+    
+    See merge request wgu-gitlab-environment/task-templates/d287-java-frameworks!2
+
+commit 1853582aaa1eae27b70ebd1836e7179de25f9235
+Author: mel.tomeo <mel.tomeo@wgu.edu>
+Date:   Thu Jan 11 13:49:29 2024 -0500
+
+    Updated AddProductController
+
+commit 3fdf7d2fe775e4046d2c99c094281d95c2fe0ed1
+Author: Zohar Sajith <zohar.sajith@cdw.com>
+Date:   Mon Feb 27 18:09:13 2023 +0000
+
+    Added Branching instructions to README
+
+commit affdd23c3819e75dd98f87e66da8ca6c113dd298
+Author: matt.alexander <matt.alexander@wgu.edu>
+Date:   Thu Feb 16 16:44:55 2023 -0500
+
+    Upload base project
+
+commit 39900dde284c2f532c35e98bdf1ab07661bcba23
+Author: Emilio Miller <emilio.miller@siriusfederal.com>
+Date:   Thu Feb 16 21:41:34 2023 +0000
+
+    Upload README
