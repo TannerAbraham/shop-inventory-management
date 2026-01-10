@@ -3,6 +3,12 @@
 ## Project Overview
 This project is a customized inventory management system for a Guitar Shop. The shop sells guitars (products) that are composed of various parts such as strings, pickups, tuners, bridges, and amplifiers.
 
+---
+
+## 🌐 Live Deployment
+
+**Try it now**: [Mountain Peak Guitar Shop](https://shop-inventory-management-production.up.railway.app/mainscreen)
+
 ## Working Directory
 ```
 /d287-java-frameworks
