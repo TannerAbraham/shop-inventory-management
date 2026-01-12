@@ -1,3 +1,21 @@
+commit ba8495c84c54e2f9a3e63c825c7bb0e65386600b
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Mon Jan 12 03:56:33 2026 -0500
+
+    Debug
+
+commit 479acc804d031083f36aa8bc46a1d9a73b9a7f04
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 06:50:44 2026 -0500
+
+    Live Deployment link added to README.md
+
+commit 8e0d901b3cf953c2b1d7ccb3ccc22f4049e6a11d
+Author: Tanner Abraham <tannersuccess@gmail.com>
+Date:   Sat Jan 10 06:39:50 2026 -0500
+
+    Updated log.txt
+
 commit 2f3c61b78f523bd9e7c3083241efd643ded147aa
 Author: Tanner Abraham <tannersuccess@gmail.com>
 Date:   Sat Jan 10 06:35:37 2026 -0500

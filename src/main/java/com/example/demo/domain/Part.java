@@ -33,9 +33,7 @@ public abstract class Part implements Serializable {
     int minInv;
     int maxInv;
 
-    @ManyToMany
-    @JoinTable(name="product_part", joinColumns = @JoinColumn(name="part_id"),
-            inverseJoinColumns=@JoinColumn(name="product_id"))
+    @ManyToMany(mappedBy = "parts")
     Set<Product> products= new HashSet<>();
 
     public Part() {

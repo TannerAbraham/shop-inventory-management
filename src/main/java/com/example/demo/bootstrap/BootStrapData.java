@@ -51,7 +51,7 @@ public class BootStrapData implements CommandLineRunner {
             strings.setPrice(12.99);
             strings.setMinInv(10);
             strings.setMaxInv(100);
-            outsourcedPartRepository.save(strings);
+            partRepository.save(strings);
 
             InhousePart pickup = new InhousePart();
             pickup.setPartId(1001);
@@ -69,7 +69,7 @@ public class BootStrapData implements CommandLineRunner {
             tuners.setPrice(45.50);
             tuners.setMinInv(5);
             tuners.setMaxInv(40);
-            outsourcedPartRepository.save(tuners);
+            partRepository.save(tuners);
 
             InhousePart bridge = new InhousePart();
             bridge.setPartId(1002);
@@ -87,37 +87,51 @@ public class BootStrapData implements CommandLineRunner {
             amp.setPrice(129.99);
             amp.setMinInv(3);
             amp.setMaxInv(25);
-            outsourcedPartRepository.save(amp);
+            partRepository.save(amp);
 
             // Create 5 sample products for guitar shop
             Product strat = new Product("Stratocaster Style Electric Guitar", 899.99, 5);
-            strat.getParts().add(strings);
-            strat.getParts().add(pickup);
-            strat.getParts().add(tuners);
             productRepository.save(strat);
+            strings.getProducts().add(strat);
+            pickup.getProducts().add(strat);
+            tuners.getProducts().add(strat);
+            partRepository.save(strings);
+            partRepository.save(pickup);
+            partRepository.save(tuners);
 
             Product lespaul = new Product("Les Paul Style Electric Guitar", 1299.99, 3);
-            lespaul.getParts().add(strings);
-            lespaul.getParts().add(pickup);
             productRepository.save(lespaul);
+            strings.getProducts().add(lespaul);
+            pickup.getProducts().add(lespaul);
+            partRepository.save(strings);
+            partRepository.save(pickup);
 
             Product acoustic = new Product("Acoustic Dreadnought Guitar", 599.99, 8);
-            acoustic.getParts().add(strings);
-            acoustic.getParts().add(tuners);
             productRepository.save(acoustic);
+            strings.getProducts().add(acoustic);
+            tuners.getProducts().add(acoustic);
+            partRepository.save(strings);
+            partRepository.save(tuners);
 
             Product semihollow = new Product("Semi-Hollow Body Guitar", 1499.99, 2);
-            semihollow.getParts().add(strings);
-            semihollow.getParts().add(pickup);
-            semihollow.getParts().add(bridge);
             productRepository.save(semihollow);
+            strings.getProducts().add(semihollow);
+            pickup.getProducts().add(semihollow);
+            bridge.getProducts().add(semihollow);
+            partRepository.save(strings);
+            partRepository.save(pickup);
+            partRepository.save(bridge);
 
             Product metal = new Product("7-String Metal Guitar", 1099.99, 4);
-            metal.getParts().add(strings);
-            metal.getParts().add(pickup);
-            metal.getParts().add(tuners);
-            metal.getParts().add(bridge);
             productRepository.save(metal);
+            strings.getProducts().add(metal);
+            pickup.getProducts().add(metal);
+            tuners.getProducts().add(metal);
+            bridge.getProducts().add(metal);
+            partRepository.save(strings);
+            partRepository.save(pickup);
+            partRepository.save(tuners);
+            partRepository.save(bridge);
 
             System.out.println("Sample guitar shop inventory has been loaded.");
         }
