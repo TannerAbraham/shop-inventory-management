@@ -156,4 +156,42 @@ class PartTest {
         partOut.setId(1l);
         assertEquals(partIn.hashCode(),partOut.hashCode());
     }
+    
+    // Part I: Unit tests for minimum inventory
+    @Test
+    void testGetMinInv() {
+        int minValue = 5;
+        partIn.setMinInv(minValue);
+        assertEquals(minValue, partIn.getMinInv());
+        partOut.setMinInv(minValue);
+        assertEquals(minValue, partOut.getMinInv());
+    }
+    
+    @Test
+    void testSetMinInv() {
+        int minValue = 10;
+        partIn.setMinInv(minValue);
+        assertEquals(minValue, partIn.getMinInv());
+        partOut.setMinInv(minValue);
+        assertEquals(minValue, partOut.getMinInv());
+    }
+    
+    // Part I: Unit tests for maximum inventory
+    @Test
+    void testGetMaxInv() {
+        int maxValue = 100;
+        partIn.setMaxInv(maxValue);
+        assertEquals(maxValue, partIn.getMaxInv());
+        partOut.setMaxInv(maxValue);
+        assertEquals(maxValue, partOut.getMaxInv());
+    }
+    
+    @Test
+    void testSetMaxInv() {
+        int maxValue = 200;
+        partIn.setMaxInv(maxValue);
+        assertEquals(maxValue, partIn.getMaxInv());
+        partOut.setMaxInv(maxValue);
+        assertEquals(maxValue, partOut.getMaxInv());
+    }
 }

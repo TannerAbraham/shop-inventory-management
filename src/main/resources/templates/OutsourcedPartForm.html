@@ -22,6 +22,11 @@
 <p><input type="text" th:field="*{inv}" placeholder="Inventory" class="form-control mb-4 col-4"/></p>
     <p th:if="${#fields.hasErrors('inv')}" th:errors="*{inv}">Inventory Error</p>
 
+    <!-- Part H: Display validation errors for min/max inventory range -->
+    <p th:if="${#fields.hasErrors('global')}">
+        <span th:each="err : ${#fields.errors('global')}" th:text="${err}" style="color: red;"></span>
+    </p>
+
     <!-- Part G: Added minimum inventory field -->
     <p><input type="text" th:field="*{minInv}" placeholder="Minimum Inventory" class="form-control mb-4 col-4"/></p>
 
